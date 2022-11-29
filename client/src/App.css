@@ -1,0 +1,211 @@
+/* .App {
+  text-align: center;
+} */
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+.details-container {
+  background-color: rgba(0,0,0,.5);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 30px;
+  margin: 50px;
+}
+.login-container {
+  background-color: rgba(0,0,0,.5);
+  color: #ffffff;
+  text-align: center;
+  width: 30%;
+  padding: 60px;
+  max-height: 500px;
+  border-radius: 30px;
+  margin: 40px;
+}
+
+.title {
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+.fetch-btn {
+  color: #ffffff;
+  background-color: #7c25f8;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 100px;
+  padding: 16px;
+  transition-property: background-color;
+  transition-duration: .3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 50px;
+  text-transform: uppercase;
+  white-space: normal;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.login-btn {
+  color: #ffffff;
+  background-color: #7c25f8;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  padding: 18px 48px 16px;
+  transition-property: background-color;
+  transition-duration: .3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.fetch-btn:hover {
+  background-color: #6207e3;
+}
+.login-btn:hover {
+  background-color: #6207e3;
+}
+
+.details-container {
+  color: #ffffff;
+}
+
+.track-image,
+.artist-image,
+.profile-image {
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.track-list,
+.artist-list {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: black;
+  align-items: center;
+}
+
+.track-name,
+.album-name,
+.artist-genre,
+.album-artist,
+.artist-name {
+  padding-left: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+hr {
+  margin: 30px 0px;
+}
+
+.list-container {
+  max-height: 300px;
+  overflow: scroll;
+  overflow-y: scroll;
+  margin-top: 20px;
+}
+
+.details {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 150px;
+}
+
+p{
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+
+/* Loading */
+:root {
+  --color-loader: rgb(255, 255, 255);
+  --loader-size: 100px;
+  --loader-speed: 500ms;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loader {
+  --loader-height: calc(var(--loader-size) / 7);
+  display: flex;
+  position: relative;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+}
+.loader::before,
+.loader > span {
+  display: block;
+  width: var(--loader-height);
+  height: var(--loader-height);
+  border-radius: 50%;
+  background: var(--color-loader);
+  
+  animation-name: to-right;
+  animation-duration: var(--loader-speed);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loader > span:nth-child(even) {
+  visibility: hidden;
+}
+.loader > span:first-child {
+  animation-name: scale-up;
+}
+.loader > span:last-child {
+  animation-name: scale-up;
+  animation-direction: reverse;
+}
+
+@keyframes to-right {
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(46, 103, 54);
+  background-image: linear-gradient(rgb(43, 110, 53), rgb(4, 11, 5) 85%);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
